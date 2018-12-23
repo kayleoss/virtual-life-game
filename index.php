@@ -1,12 +1,14 @@
 <?php 
 include "layouts/head.php"; 
 include "./db/db.php";
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
-$error_message = null;
+
 $legend_class ="mt-5";
-$legend_text = "Log In"
+$legend_text = "Log In";
+
+if (isset($_POST['username'])) {
+    //handle login here
+};
+
 ?>
     <div class="game-screen">
         <?php include "layouts/nav.php"; ?>

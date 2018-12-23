@@ -11,7 +11,7 @@ $legend_text = "Sign Up"
     <div class="game-screen">
         <ul class="nav justify-content-center pt-2 pb-2 light-transparent-background">
             <li class="nav-item">
-                <p>Sign up for an account to start playing</p>
+                <a href="/" class="nav-link">Have an account? Log in</a>
             </li>
         </ul>
         <div class="small-container">

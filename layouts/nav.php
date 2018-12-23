@@ -11,7 +11,13 @@
     <li class="nav-item">
         <a class="nav-link" href="/users">Users</a>
     </li>
+    <?php if ($player): ?>
+    <li class="nav-item">
+        <a class="nav-link" href="/profile/<?= $player->id ?>">Profile</a>
+    </li>
+    <?php else: ?>
     <li class="nav-item">
         <a class="nav-link" href="/signup">Signup</a>
     </li>
+    <?php endif; ?>
 </ul>
