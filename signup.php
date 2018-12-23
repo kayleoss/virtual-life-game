@@ -1,12 +1,22 @@
 <?php 
 include "layouts/head.php"; 
 include "./db/db.php";
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+$error_message = null;
 $legend_class ="mt-5";
-$legend_text = "Sign Up"
+$legend_text = "Sign Up";
+
+if (isset($_POST['username'])) {
+    //username validation
+    if (strlen($_POST['username'] < 6 )) {
+        $error_message = "Invalid username. Must be at least 6 characters.";
+    } 
+    //TODO: Check db for username that already exists
+};
+
 ?>
     <div class="game-screen">
         <ul class="nav justify-content-center pt-2 pb-2 light-transparent-background">
