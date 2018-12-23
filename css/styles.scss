@@ -1,0 +1,48 @@
+/* cursors */
+$point: url("/assets/cursors/point.png"), auto;
+$pointer: url('/assets/cursors/pointer.png'), auto;
+$text: url('/assets/cursors/text.png'), auto;
+
+body {
+    font-size: 18px;
+    font-family: 'Iceland', sans-serif;
+    cursor: $point ;
+}
+
+a:hover, .nav-item:hover, button.btn:not(:disabled):not(.disabled) {
+    cursor: $pointer;
+}
+
+input, form.form-group input.form-control {
+    cursor: $text;
+    background: rgba(224, 239, 248, 0.541);
+    border-radius: 0;
+}
+
+@media (min-width: 800px) {
+    body {
+        height: 100vh;
+    }
+    .small-container {
+        width: 50vw;
+        margin: auto;
+    }
+}
+
+.light-transparent-background {
+    background: rgba(255, 255, 255, 0.658);
+}
+
+.main-bg {
+    background: url('/assets/backgrounds/main-bg.jpg');
+    background-size: cover;
+}
+
+.custom-bg-color-1 {
+    color: #ffffff;
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+}

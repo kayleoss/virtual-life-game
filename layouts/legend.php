@@ -1,0 +1,1 @@
+<div class="text-center custom-bg-color-1 <?= $legend_class ?>"><?= $legend_text ?></div>
